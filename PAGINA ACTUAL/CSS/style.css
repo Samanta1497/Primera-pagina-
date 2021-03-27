@@ -1,0 +1,215 @@
+html
+{
+    font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+}
+
+.servicios,
+.nav,
+#contacto
+{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+body
+{
+    font-size: 16px; /*ESTO ES IGUAL A QUE 1 REM = 10 PIX*/
+
+}
+:root{
+    --lila:#E8D7FF;
+    --rosa: #FFC2DF;
+    --naranja: #ffd7d5;
+    --amarillo: #F3FFE1;
+    --verde: rgba(153, 255, 102, 0.5);
+}
+
+
+
+body
+{
+    background-image: linear-gradient(to top, var(--naranja)0%, var(--amarillo)100%);
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+.contenedor
+{
+    margin: auto 0;
+    background-color: var(--verde);
+
+}
+.marco
+{
+    background-color: var(--verde);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin: 10rem 10rem;
+}
+
+.sombra
+{
+    -webkit-box-shadow: 29px -15px 0px 0px rgba(26,107,107,1);
+    -moz-box-shadow: 29px -15px 0px 0px rgba(26,107,107,1);
+    box-shadow: 29px -15px 0px 0px rgba(26,107,107,1);
+    border-radius: 1rem;
+}
+
+
+.nav{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (min-width:768px){
+    .nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.nav a
+{
+    color:rgb(1, 29, 27);
+    text-decoration: none;
+
+}
+
+.nav a:hover
+{
+    background-color:teal;
+    color: var(--rosa);
+
+}
+
+.img_header
+{
+    height: auto;
+    background-image: url(../img/hero.jpg);
+}
+
+.img_cont
+{
+   
+    background-color: rgba(0,0,0,.4);
+    color: #FFC2DF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.img_cont h1
+{
+    color: aliceblue;
+
+}
+
+.img_cont a
+{
+    text-decoration: none;
+
+}
+
+.icono
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+.boton 
+{ 
+    background-color: aquamarine;
+    color: darkblue;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+
+.boton:hover 
+{
+    cursor: pointer;
+}
+.nombre span
+{   font-size: 20px;
+    color: var(--verde);
+
+}
+.nombre
+{   color: var(--rosa);
+    font-size: 4rem;
+}
+
+#nombre_contacto
+{   color:blueviolet;
+    font-size: 20PX;
+
+}
+ul
+{
+    color: turquoise;
+}
+
+ol
+{
+    color: var(--lila);
+}
+
+@media (min-width:768px)
+{
+    .servicios
+    {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 33.3%, 33.3%, 33.3%; */
+    column-gap: 2rem;
+    }
+}
+
+#contacto
+{
+    background-color: darkseagreen;
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 3rem;
+}
+
+#contacto h3
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+#contacto input[type="nombre"],
+#contacto input[type="password"],
+#contacto input[type="email"],
+#contacto input[type="teléfono"]
+{
+    background-color: #FFC2DF;
+    border: none;
+}
+
+#contacto textarea
+{
+    height: 8rem;
+    background-color: #FFC2DF;
+    border: none;
+}
+
+.enviar
+{
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.enviar-columna
+{
+    width: 20%;
+}
